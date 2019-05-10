@@ -82,6 +82,7 @@ process.stdin.on("data", data => {
   const inputText = String(data);
   const parsed = parseInput(inputText);
   const result = printResult(optimize(parsed));
-  console.log(result);
+  if (result === "no solution exists") console.error(result);
+  else console.log(result);
   return result === "no solution exists" ? process.exit(1) : process.exit(0);
 });
