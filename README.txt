@@ -1,6 +1,6 @@
-Paintshop Excersice
+Paintshop Exercise
 
-* Running the excercise
+* Running the exercise
 
 This program expects a stream of text from stdin. Pipe text data as follows.
 
