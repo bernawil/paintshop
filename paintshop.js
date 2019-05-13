@@ -3,9 +3,9 @@ const parseInput = input => {
   const totalColors = parseInt(inputLines.shift());
   return {
     totalColors,
-    customers: inputLines.map(line => line.match(/\d \w/g)).map(l =>
+    customers: inputLines.map(line => line.match(/\d+ \w/g)).map(l =>
       l.map(i => ({
-        color: i.match(/\d/)[0],
+        color: i.match(/\d+/)[0],
         type: i.match(/[a-zA-Z]/)[0]
       }))
     )
